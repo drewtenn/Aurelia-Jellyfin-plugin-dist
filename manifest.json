@@ -8,6 +8,14 @@
         "category": "General",
         "versions": [
             {
+                "version": "1.1.1.0",
+                "changelog": "- Initial release. - Resolution (isHd/is4K) passthrough for client filtering. - Fix: filtering by a library returned no items. The library (parentId) is now\n  resolved into its contents so video range / codec / audio filters work when\n  scoped to a specific library.\n",
+                "targetAbi": "10.11.0.0",
+                "sourceUrl": "https://github.com/drewtenn/Aurelia-Jellyfin-plugin-dist/releases/download/v1.1.1.0/media-stream-filters_1.1.1.0.zip",
+                "checksum": "a1940db1576c777bb3bc93d07775fa9a",
+                "timestamp": "2026-06-15T22:47:31Z"
+            },
+            {
                 "version": "1.1.0.0",
                 "changelog": "- Initial release. - Resolution (isHd/is4K) passthrough for client filtering.\n",
                 "targetAbi": "10.11.0.0",
