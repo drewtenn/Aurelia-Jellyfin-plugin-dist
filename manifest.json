@@ -12,8 +12,8 @@
                 "changelog": "- Initial release. - Resolution (isHd/is4K) passthrough for client filtering.\n",
                 "targetAbi": "10.11.0.0",
                 "sourceUrl": "https://github.com/drewtenn/Aurelia-Jellyfin-plugin-dist/releases/download/v1.1.0.0/media-stream-filters_1.1.0.0.zip",
-                "checksum": "63e5439ef33546c40b8f3e3a494d7e17",
-                "timestamp": "2026-06-15T18:09:16Z"
+                "checksum": "c67629c04bf0bedef7544795e87fa718",
+                "timestamp": "2026-06-15T20:08:46Z"
             }
         ]
     }
