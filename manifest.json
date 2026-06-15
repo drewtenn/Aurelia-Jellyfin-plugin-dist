@@ -1,0 +1,20 @@
+[
+    {
+        "guid": "f1a7b3c2-9d4e-4a86-bf21-6c0e5d83a47b",
+        "name": "Media Stream Filters",
+        "description": "Adds server-side filtering by media-stream characteristics that Jellyfin's core API can't express: video dynamic range (SDR/HDR10/HDR10+/Dolby Vision/HLG), video codec, audio codec, audio channel count, and spatial audio (Dolby Atmos / DTS:X). Exposes a paginated, BaseItemDto-compatible endpoint plus a capability endpoint for client feature-detection.\n",
+        "overview": "Filter libraries by video range, codecs, audio channels, and spatial audio.",
+        "owner": "drew",
+        "category": "General",
+        "versions": [
+            {
+                "version": "1.1.0.0",
+                "changelog": "- Initial release. - Resolution (isHd/is4K) passthrough for client filtering.\n",
+                "targetAbi": "10.11.0.0",
+                "sourceUrl": "https://github.com/drewtenn/Aurelia-Jellyfin-plugin-dist/releases/download/v1.1.0.0/media-stream-filters_1.1.0.0.zip",
+                "checksum": "63e5439ef33546c40b8f3e3a494d7e17",
+                "timestamp": "2026-06-15T18:09:16Z"
+            }
+        ]
+    }
+]
