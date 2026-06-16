@@ -8,6 +8,14 @@
         "category": "General",
         "versions": [
             {
+                "version": "1.1.4.0",
+                "changelog": "- Initial release. - Resolution (isHd/is4K) passthrough for client filtering. - Fix: filtering by a library returned no items. The library (parentId) is now\n  resolved into its contents so video range / codec / audio filters work when\n  scoped to a specific library.\n- Renamed the plugin to \"Aurelia Companion\" (display name only; API route,\n  plugin id, and behavior unchanged).\n- Capabilities are now scoped to the requested library (parentId): the available\n  values offered for a library are drawn only from items in that library, so any\n  single facet selection is guaranteed to match at least one item there. Omitting\n  parentId still returns the global value set.\n- TV libraries now filter correctly by stream facets. Stream attributes live on\n  episodes, but TV libraries are browsed at the series level; the filter now\n  matches episodes and returns the shows that have at least one matching episode.\n  Also forces a recursive query so a library id resolves to its contents.\n",
+                "targetAbi": "10.11.0.0",
+                "sourceUrl": "https://github.com/drewtenn/Aurelia-Jellyfin-plugin-dist/releases/download/v1.1.4.0/aurelia-companion_1.1.4.0.zip",
+                "checksum": "907dba752839f6cc96a486eb6b241c24",
+                "timestamp": "2026-06-16T01:35:38Z"
+            },
+            {
                 "version": "1.1.3.0",
                 "changelog": "- Initial release. - Resolution (isHd/is4K) passthrough for client filtering. - Fix: filtering by a library returned no items. The library (parentId) is now\n  resolved into its contents so video range / codec / audio filters work when\n  scoped to a specific library.\n- Renamed the plugin to \"Aurelia Companion\" (display name only; API route,\n  plugin id, and behavior unchanged).\n- Capabilities are now scoped to the requested library (parentId): the available\n  values offered for a library are drawn only from items in that library, so any\n  single facet selection is guaranteed to match at least one item there. Omitting\n  parentId still returns the global value set.\n",
                 "targetAbi": "10.11.0.0",
