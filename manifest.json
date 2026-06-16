@@ -1,12 +1,20 @@
 [
     {
         "guid": "f1a7b3c2-9d4e-4a86-bf21-6c0e5d83a47b",
-        "name": "Media Stream Filters",
+        "name": "Aurelia Companion",
         "description": "Adds server-side filtering by media-stream characteristics that Jellyfin's core API can't express: video dynamic range (SDR/HDR10/HDR10+/Dolby Vision/HLG), video codec, audio codec, audio channel count, and spatial audio (Dolby Atmos / DTS:X). Exposes a paginated, BaseItemDto-compatible endpoint plus a capability endpoint for client feature-detection.\n",
         "overview": "Filter libraries by video range, codecs, audio channels, and spatial audio.",
         "owner": "drew",
         "category": "General",
         "versions": [
+            {
+                "version": "1.1.2.0",
+                "changelog": "- Initial release. - Resolution (isHd/is4K) passthrough for client filtering. - Fix: filtering by a library returned no items. The library (parentId) is now\n  resolved into its contents so video range / codec / audio filters work when\n  scoped to a specific library.\n- Renamed the plugin to \"Aurelia Companion\" (display name only; API route,\n  plugin id, and behavior unchanged).\n",
+                "targetAbi": "10.11.0.0",
+                "sourceUrl": "https://github.com/drewtenn/Aurelia-Jellyfin-plugin-dist/releases/download/v1.1.2.0/aurelia-companion_1.1.2.0.zip",
+                "checksum": "a3f4eb90a3a53207e12ffef4110d412c",
+                "timestamp": "2026-06-16T00:03:27Z"
+            },
             {
                 "version": "1.1.1.0",
                 "changelog": "- Initial release. - Resolution (isHd/is4K) passthrough for client filtering. - Fix: filtering by a library returned no items. The library (parentId) is now\n  resolved into its contents so video range / codec / audio filters work when\n  scoped to a specific library.\n",
