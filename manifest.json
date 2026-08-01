@@ -2,11 +2,19 @@
     {
         "guid": "f1a7b3c2-9d4e-4a86-bf21-6c0e5d83a47b",
         "name": "Aurelia Companion",
-        "description": "Adds two independent APIs: server-side filtering by media-stream characteristics that Jellyfin's core API can't express (video dynamic range, codecs, audio channel count, and spatial audio), plus opt-in global recent-podcast discovery via Podcast Index using administrator-provided credentials. The filtering API exposes a paginated, BaseItemDto-compatible endpoint and a capability endpoint for client feature-detection.\n",
-        "overview": "Media-stream filtering plus opt-in recent podcast discovery.",
-        "owner": "drew",
+        "description": "Adds three independent APIs: server-side filtering by media-stream characteristics that Jellyfin's core API can't express (video dynamic range, codecs, audio channel count, and spatial audio), plus opt-in global recent-podcast discovery via Podcast Index using administrator-provided credentials. The filtering API exposes a paginated, BaseItemDto-compatible endpoint and a capability endpoint for client feature-detection. A server administrator can also configure an already-installed resolver executable for short-lived YouTube trailer media URLs.\n",
+        "overview": "Media-stream filtering, opt-in podcast discovery, and YouTube trailer resolution.",
+        "owner": "3dot3.com",
         "category": "General",
         "versions": [
+            {
+                "version": "1.2.0.1",
+                "changelog": "- Initial release. - Resolution (isHd/is4K) passthrough for client filtering. - Fix: filtering by a library returned no items. The library (parentId) is now\n  resolved into its contents so video range / codec / audio filters work when\n  scoped to a specific library.\n- Renamed the plugin to \"Aurelia Companion\" (display name only; API route,\n  plugin id, and behavior unchanged).\n- Capabilities are now scoped to the requested library (parentId): the available\n  values offered for a library are drawn only from items in that library, so any\n  single facet selection is guaranteed to match at least one item there. Omitting\n  parentId still returns the global value set.\n- TV libraries now filter correctly by stream facets. Stream attributes live on\n  episodes, but TV libraries are browsed at the series level; the filter now\n  matches episodes and returns the shows that have at least one matching episode.\n  Also forces a recursive query so a library id resolves to its contents.\n- Added opt-in recent podcast discovery through Podcast Index. - Adds an opt-in, authenticated YouTube trailer resolver API. It accepts only canonical\n  video IDs, invokes an administrator-installed executable with fixed arguments, and returns\n  only a short-lived direct HTTPS media URL, safe headers, and its expiry. The executable is\n  not packaged with the plugin.\n",
+                "targetAbi": "10.11.0.0",
+                "sourceUrl": "https://github.com/drewtenn/Aurelia-Jellyfin-plugin-dist/releases/download/v1.2.0.1/aurelia-companion_1.2.0.1.zip",
+                "checksum": "61947264068fbed2e7317934c298ee1e",
+                "timestamp": "2026-08-01T22:26:48Z"
+            },
             {
                 "version": "1.2.0.0",
                 "changelog": "- Initial release. - Resolution (isHd/is4K) passthrough for client filtering. - Fix: filtering by a library returned no items. The library (parentId) is now\n  resolved into its contents so video range / codec / audio filters work when\n  scoped to a specific library.\n- Renamed the plugin to \"Aurelia Companion\" (display name only; API route,\n  plugin id, and behavior unchanged).\n- Capabilities are now scoped to the requested library (parentId): the available\n  values offered for a library are drawn only from items in that library, so any\n  single facet selection is guaranteed to match at least one item there. Omitting\n  parentId still returns the global value set.\n- TV libraries now filter correctly by stream facets. Stream attributes live on\n  episodes, but TV libraries are browsed at the series level; the filter now\n  matches episodes and returns the shows that have at least one matching episode.\n  Also forces a recursive query so a library id resolves to its contents.\n- Added opt-in recent podcast discovery through Podcast Index.\n",
